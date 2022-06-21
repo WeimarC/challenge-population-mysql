@@ -4030,4 +4030,10 @@ export const cities: City[] = [
     population: 10494876,
   },
   { id: 1000, name: "Buliu", country: "China", population: 6472250 },
+  {
+    id: 1001,
+    name: "Santiago",
+    country: "Chile",
+    population: 1000000,
+  }
 ];

@@ -37,6 +37,7 @@ export const destroyDB = async () => {
   };
   const pool = createPool(config);
   try {
+    await pool.query("drop table city;")
     await pool.query(" drop database if exists population; ");
   } catch (error) {
     console.log(error);
