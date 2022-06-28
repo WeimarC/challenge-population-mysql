@@ -34,6 +34,7 @@ export const destroyDB = async () => {
     host: process.env.BDD_HOST || "localhost",
     user: process.env.BDD_USER || "root",
     password: process.env.BDD_PASS || "newpass",
+    database: "population"
   };
   const pool = createPool(config);
   try {
